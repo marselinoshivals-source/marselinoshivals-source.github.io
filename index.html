@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marselino Shivals Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #00fbff; /* Warna Neon Project Kamu */
+            --bg: #0f1113;
+            --card-bg: #1a1d21;
+            --text-main: #ffffff;
+            --text-dim: #a0a0a0;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: var(--bg); color: var(--text-main); font-family: 'Inter', sans-serif; line-height: 1.6; }
+
+        .container { max-width: 500px; margin: 0 auto; padding: 60px 20px; }
+
+        /* --- PROFILE SECTION --- */
+        .profile { text-align: center; margin-bottom: 50px; }
+        .profile-img { 
+            width: 120px; height: 120px; border-radius: 50%; 
+            border: 3px solid var(--primary); padding: 5px; margin-bottom: 20px;
+            object-fit: cover;
+        }
+        .profile h1 { font-size: 24px; font-weight: 700; letter-spacing: -0.5px; }
+        .profile p { color: var(--text-dim); font-size: 15px; max-width: 300px; margin: 10px auto; }
+
+        /* --- PROJECT SECTION --- */
+        .project-section { margin-bottom: 40px; }
+        .project-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid #2d3136;
+            transition: 0.3s;
+            margin-bottom: 20px;
+        }
+        .project-card:hover { border-color: var(--primary); transform: translateY(-5px); }
+
+        .project-info { padding: 20px; }
+        .project-title { font-size: 18px; font-weight: 600; margin-bottom: 10px; display: block; text-decoration: none; color: var(--primary); }
+        .project-title i { font-size: 14px; margin-left: 5px; }
+
+        /* Galeri Gambar */
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            padding: 0 20px 20px 20px;
+        }
+        .project-gallery img {
+            width: 100%;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            border-radius: 8px;
+            background: #222;
+        }
+
+        /* --- FOOTER --- */
+        .footer { text-align: center; margin-top: 50px; color: var(--text-dim); font-size: 13px; }
+        .social-links { margin-bottom: 15px; }
+        .social-links a { color: var(--text-main); font-size: 20px; margin: 0 10px; text-decoration: none; transition: 0.3s; }
+        .social-links a:hover { color: var(--primary); }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="profile">
+            <img src="https://via.placeholder.com/150" alt="Marselino Shivals" class="profile-img">
+            <h1>Marselino Shivals</h1>
+            <p>Full-Stack Web Developer & IoT Enthusiast. Creating bridge between hardware and software.</p>
+        </header>
+
+        <div class="project-section">
+            <div class="project-card">
+                <div class="project-info">
+                    <a href="https://github.com/marselinoshivals-source/store_iot_indonesia" target="_blank" class="project-title">
+                        <i class="fab fa-github"></i> Store IoT Indonesia - RFID Payment System <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <p></p> style="font-size: 14px; color: var(--text-dim);">Integrated web store with physical RFID verification & automated stock system.</p>
+                </div>
+                <div class="project-gallery">
+                    <img src="screenshot1.jpg" alt="Dashboard Admin">
+                    <img src="screenshot2.jpg" alt="Checkout System">
+                </div>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <div class="project-card">
+                <div class="project-info">
+                    <a href="#" class="project-title">
+                        <i class="fas fa-laptop-code"></i> Other Project Title <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <p></p> style="font-size: 14px; color: var(--text-dim);">Short description about your other amazing work here.</p>
+                </div>
+                <div class="project-gallery">
+    <img src="ss1.png" alt="Tampilan login User">
+    <img src="ss2.png" alt="Dashboard E-commerce">
+    <img src="ss3.png" alt="description">
+    <img src="ss4.png" alt="Transaction">
+    <img src="ss5.png" alt="Top Up">
+    <img src="ss6.png" alt="Tampilan login User">
+    <img src="ss7.png" alt="Dashboard E-commerce">
+    <img src="ss8.png" alt="Produk">
+    <img src="ss9.png" alt="Edit Produk">
+    <img src="ss10.png" alt="Tambah Produk">
+</div>
+</div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="social-links">
+                <a href="https://www.instagram.com/sell_21__?igsh=MXdjYzR6MG1nOG11bA=="><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/marselinoshivals-source"><i class="fab fa-github"></i></a>
+                <a href="mailto:marselino.shiva.ls@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2026 Marselino Shivals. Built with 💚</p>
+        </footer>
+    </div>
+
+</body>
+</html>
